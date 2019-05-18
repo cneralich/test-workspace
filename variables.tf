@@ -2,5 +2,5 @@
 
 variable "pet_name_length" {
   type    = "string"
-  default = "3"
+  default = "2"
 }
