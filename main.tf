@@ -10,4 +10,4 @@ resource "random_pet" "server" {
 }
 
 variable "ATLAS_WORKSPACE_NAME" {}
-output "workspace" { value = "${var.ATLAS_WORKSPACE_NAME}" }
+#output "workspace" { value = "${var.ATLAS_WORKSPACE_NAME}" }
