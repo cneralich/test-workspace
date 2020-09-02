@@ -6,8 +6,8 @@ resource "random_pet" "server" {
   }
 
   length = "${var.pet_name_length}"
-  prefix = "${var.ATLAS_WORKSPACE_NAME}"
+  prefix = "${ATLAS_WORKSPACE_NAME}"
 }
 
-variable "ATLAS_WORKSPACE_NAME" {}
+#variable "ATLAS_WORKSPACE_NAME" {}
 #output "workspace" { value = "${var.ATLAS_WORKSPACE_NAME}" }
