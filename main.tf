@@ -6,7 +6,7 @@ resource "random_pet" "server" {
   }
 
   length = "${var.pet_name_length}"
-  prefix = "${var.ATLAS_ADDRESS}"
+  #prefix = "${var.ATLAS_ADDRESS}"
 }
 
 #variable "ATLAS_ADDRESS" {}
