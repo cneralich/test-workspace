@@ -1,9 +1,9 @@
 # main.tf
 
 resource "random_pet" "server" {
-  keepers = {
+  /*keepers = {
     uuid = "${uuid()}"
-  }
+  }*/
 
   length = var.pet_name_length
   prefix = var.prefix
