@@ -6,7 +6,7 @@ resource "random_pet" "server" {
   }*/
 
   length = var.pet_name_length
-  prefix = var.ATLAS_WORKSPACE_NAME
+  prefix = split("/",var.TFC_WORKSPACE_SLUG)[0]
 }
 
 # variables.tf
@@ -26,4 +26,5 @@ output "server" {
   value = random_pet.server.id
 }
 
-variable "ATLAS_WORKSPACE_NAME" {}
+#variable "ATLAS_WORKSPACE_NAME" {}
+variable "TFC_WORKSPACE_SLUG" {}
